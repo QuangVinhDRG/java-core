@@ -1,4 +1,6 @@
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class DataTypeDemo {
     public static void main(String[] args) {
@@ -35,6 +37,8 @@ public class DataTypeDemo {
         System.out.println("today = " + today);
         LocalDate date = LocalDate.of(2019, 3, 19);
         System.out.println("date = " + date);
+        LocalDateTime localDateTime = LocalDateTime.parse("2024-06-07 09:00:01", DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+        System.out.println("localDateTime = " + localDateTime.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")));
 
         // Kiểu enum
         UIState state = UIState.LOADING;
@@ -48,7 +52,7 @@ public class DataTypeDemo {
         // Cách khởi tạo khác
         String[] fruits;
         // ...
-        fruits = new String[] {"Cam", "Mận", "Táo"};
+        fruits = new String[]{"Cam", "Mận", "Táo"};
         char[] characters = new char[10];
         System.out.println("characters.length = " + characters.length);
         // Cập nhật giá trị theo chỉ số
