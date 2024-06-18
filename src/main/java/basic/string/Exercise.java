@@ -31,9 +31,7 @@ public class Exercise {
     String question3() {
         System.out.print("Nhập tên: ");
         String name = scanner.nextLine();
-        if (Character.isUpperCase(name.charAt(0))) {
-            return name = name.toUpperCase();
-        }
+        String result = name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
         return name;
     }
 
