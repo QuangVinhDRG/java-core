@@ -40,6 +40,18 @@ public class QLCB {
                 congNhan.setTuoi(tuoi);
                 congNhan.setGioiTinh(gioiTinh);
                 congNhan.setDiaChi(diaChi);
+                System.out.print("Nhập bậc công nhân (từ 1 đến 10): ");
+                congNhan.setBac(Integer.parseInt(scanner.nextLine()));
+                CanBo canBo = congNhan;
+                canBoList.add(canBo);
+                break;
+            case 2:
+                KySu kySu = new KySu();
+                kySu.setHoTen(hoTen);
+                kySu.setTuoi(tuoi);
+                kySu.setGioiTinh(gioiTinh);
+                kySu.setDiaChi(diaChi);
+                
                 break;
         }
     }
