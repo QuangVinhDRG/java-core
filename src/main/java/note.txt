@@ -1,0 +1,4 @@
+Biên dịch: 1 dòng lỗi, ko chạy cả chương trình
+Thông dịch: chạy cho đến khi gặp dòng lỗi
+Stack: nguyên thủy, nhanh hơn heap
+Heap: không nguyên thủy, chậm hơn stack
